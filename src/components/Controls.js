@@ -8,15 +8,21 @@ import PropTypes from "prop-types";
     const { resetLabel, incrementLabel, decrementLabel, increment, decrement, resetCount } = this.props;
 
     return (
-      <div className="controls">
-        <div onClick={() => {increment();}}>
-          <span>{incrementLabel}</span>
-        </div>
-        <div onClick={() => {resetCount(0);}}>
-          <span>{resetLabel}</span>
-        </div>
-        <div onClick={() => {decrement();}}>
-          <span>{decrementLabel}</span>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="controls">
+              <div onClick={() => {increment();}}>
+                <span>{incrementLabel}</span>
+              </div>
+              <div onClick={() => {resetCount(0);}}>
+                <span>{resetLabel}</span>
+              </div>
+              <div onClick={() => {decrement();}}>
+                <span>{decrementLabel}</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
