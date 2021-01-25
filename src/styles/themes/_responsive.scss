@@ -1,0 +1,58 @@
+// Required
+@import "../abstracts/variables";
+@import "../base/base";
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media only screen and (min-width: $bp-extra-large-desktop-min) and (max-width: $bp-extra-large-desktop-max) {
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media only screen and (min-width: $bp-large-desktop-min) and (max-width: $bp-large-desktop-max) {
+  h2 {
+    font-size: 38px;
+    line-height: 55px;
+  }
+  h3 {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media only screen and (min-width: $bp-medium-device-min) and (max-width: $bp-medium-device-max) {
+  h2 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 32px;
+  }
+}
+
+/* Small devices (landscape phones, min 576px  and max 767px) */
+
+@media only screen and (min-width: $bp-landscape-device-min) and (max-width: $bp-landscape-device-max) {
+  h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  h3 {
+    font-size: 23px;
+    line-height: 33px;
+  }
+}
+
+@media only screen and (min-width: $bp-extra-small-device-min) and (max-width: $bp-extra-small-device-max) {
+  h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
