@@ -4,7 +4,11 @@
   "description": "Everything you need to get started with a basic React application",
   "watch": true,
   "dependencies": {
+    "@chakra-ui/react": "^1.1.6",
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
     "bootstrap": "^4.6.0",
+    "framer-motion": "^3.2.2-rc.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-bootstrap": "^1.4.3",

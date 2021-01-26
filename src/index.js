@@ -7,11 +7,12 @@ import "bootstrap/scss/bootstrap.scss";
 
 import App from "./App";
 import store from "./store";
-
-// By using <Provider />, the store will be made available for all the components in your application.
+import { ChakraProvider } from "@chakra-ui/react"
 
 render(
   <Provider store={store}>
-    <App />
+    <ChakraProvider>
+      <App />
+    </ChakraProvider>
   </Provider>, document.getElementById("root")
 );

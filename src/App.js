@@ -1,11 +1,9 @@
-
 import React, { Component } from "react";
-import Counter from "./containers/Counter";
-
+import ChakraDemo from "./components/ChakraDemo"
 class App extends Component {
   render() {
     return (
-      <Counter />
+      <ChakraDemo />
     );
   }
 }
