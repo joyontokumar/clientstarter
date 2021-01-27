@@ -1,13 +1,13 @@
 import React from "react";
-
-interface Props {
-  
+interface Description {
+  title: string,
+  description: string
 }
-
-const TypescriptDemo = (props: Props) => {
+const TypescriptDemo = ({title="this is the title", description="this is the description text"}: Description) => {
   return (
     <div>
-      <h1>This is typescript demo content</h1>
+      <h1>{title}</h1>
+      <p>{description}</p>
     </div>
   );
 };
