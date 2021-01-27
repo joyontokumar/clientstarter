@@ -4,10 +4,13 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const webpack = require("webpack");
 
 module.exports = {
-  entry: ["./src/index.js", "./src/styles/main.scss"],
+  entry: ["./src/index.tsx", "./src/styles/main.scss"],
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "./public/dist")
+  },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js']
   },
   module: {
     rules: [
@@ -16,12 +19,12 @@ module.exports = {
         loader: ExtractTextPlugin.extract(["css-loader", "sass-loader"])
       },
       {
-        test: /\.js$/,
+        test: /\.tsx$/,
         exclude: /node_modules/,
         loaders: "eslint-loader",
       },
       {
-        test: /\.js$/,
+        test: /\.tsx$/,
         exclude: /node_modules/,
         loaders: "babel-loader",
         options: {
