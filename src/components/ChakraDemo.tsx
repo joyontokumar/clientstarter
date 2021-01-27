@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react"
 
 interface Props {
-  name: "ryad"
+  
 }
 
 const ChakraDemo = ({}: Props): ReactElement =>{
