@@ -1,1 +1,1 @@
-react redux sass starter project
+react redux typescript starter
