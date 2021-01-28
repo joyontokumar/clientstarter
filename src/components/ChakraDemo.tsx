@@ -1,5 +1,6 @@
 import { any, string } from "prop-types";
 import React, { ReactElement,useEffect,useState } from "react";
+import {getPosts} from "../api/index";
 
 interface Props {
   
@@ -7,12 +8,12 @@ interface Props {
 
 const ChakraDemo = ({}: Props): ReactElement =>{
   const[items, setItems] = useState([]);
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-    .then(res => res.json())
-    .then(data => setItems(data))
-    .then(err => console.log(err));
-  },[]);
+    useEffect(()=>{
+        getPosts()
+        .then(outputdata => {
+          setItems(outputdata);
+        });
+    },[]);
   return (
     <div>
       <h1 style={{textAlign:"center", marign:"auto", width:"100%", display:"block"}}>Hello React Redux Chakra Sass Typescript</h1>
