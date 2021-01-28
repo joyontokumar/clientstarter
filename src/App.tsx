@@ -1,14 +1,19 @@
+import { title } from "process";
+import { string } from "prop-types";
 import React, { Component } from "react";
-import ChakraDemo from "./components/ChakraDemo"
-import TypescriptDemo from "./components/TypescriptDemo"
+import ChakraDemo from "./components/ChakraDemo";
+import TypescriptDemo from "./components/TypescriptDemo";
+interface Description {
+  title: string
+}
 class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div style={{marginTop:"50px"}} className="container">
         <div className="row">
-          <div className="col-gl-1">
+          <div className="col-lg-12">
             <ChakraDemo />
-            <TypescriptDemo/>
+            <TypescriptDemo Description/>
           </div>
         </div>
       </div>

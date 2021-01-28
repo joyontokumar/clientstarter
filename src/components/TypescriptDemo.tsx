@@ -1,13 +1,8 @@
 import React from "react";
-interface Description {
-  title: string,
-  description: string
-}
-const TypescriptDemo = ({title="this is the title", description="this is the description text"}: Description) => {
+const TypescriptDemo = ({title="React Project Starter"}: any) => {
   return (
     <div>
-      <h1>{title}</h1>
-      <p>{description}</p>
+      <p style={{textAlign:"center"}}>{title}</p>
     </div>
   );
 };
