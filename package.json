@@ -14,6 +14,7 @@
     "@types/react-redux": "^7.1.16",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "dotenv-load": "^2.0.0",
     "framer-motion": "^3.2.2-rc.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
@@ -49,7 +50,8 @@
     "start:dev": "webpack-dev-server",
     "build": "webpack",
     "watch": "webpack --watch",
-    "lint": "./node_modules/.bin/eslint ./src"
+    "lint": "./node_modules/.bin/eslint ./src",
+    "generate-type": "apollo client:codegen  --excludes=node_modules/* --target typescript --tagName gql --outputFlat queryType"
   },
   "precommit": "lint",
   "author": "Santhosh Sundar",
